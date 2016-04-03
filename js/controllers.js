@@ -8,10 +8,10 @@ app.controller('HomeCtrl', function($scope) {
             // '*.mp4',
             // '*.swf'
         ];
-        // $scope.poster = 'http://placehold.it/2000&text=you%20may%20want%20to%20have%20a%20poster';
+        $scope.poster = 'videos/trees.png';
         $scope.fullScreen = true;
         $scope.muted = true;
-        $scope.zIndex = '22';
+        $scope.zIndex = '10';
         $scope.playInfo = {};
         $scope.pausePlay = false;
     });
