@@ -15,15 +15,17 @@ body {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
-	z-index: 20;
+	/*z-index: 20;*/
 	position: fixed;
 }
 
-.opacity .content:before {
-	height: 100%;
-	width: 100%;
-	background-color: rgba(0, 0, 0, 0.7);
-	z-index: 60;
-	position: fixed;
+
+#home img {
+	height: 600px;
+	width: 900px;
+	position: relative;
+	z-index: 50;
+
+
 
 }

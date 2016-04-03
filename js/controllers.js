@@ -11,7 +11,7 @@ app.controller('HomeCtrl', function($scope) {
         $scope.poster = 'videos/trees.png';
         $scope.fullScreen = true;
         $scope.muted = true;
-        $scope.zIndex = '10';
+        // $scope.zIndex = '10';
         $scope.playInfo = {};
         $scope.pausePlay = false;
     });
