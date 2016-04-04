@@ -12,5 +12,29 @@ app.config([
 			controller: "HomeCtrl"
 
 		})
+		.state(
+			"d3",
+			{
+				url:"/d3",
+				templateUrl: "views/d3.html",
+				controller: "d3Ctrl"
+			}
+		)
+		.state(
+			"search",
+			{
+				url:"/search",
+				templateUrl: "views/search.html",
+				controller: "SearchCtrl"
+			}
+		)
+		.state(
+			"showpage",
+			{
+				url:"/showpage",
+				templateUrl: "views/showpage.html",
+				controller: "ShowPageCtrl"
+			}
+		)
 	}
 ]);

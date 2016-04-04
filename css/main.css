@@ -55,7 +55,7 @@ div#home p {
 	
 }
 
-#home p button {
+#home p a button {
 	border: white 2px solid;
 	padding: 15px;
 	position: relative;
@@ -89,3 +89,16 @@ ul img {
 	transform: translateY(-8px);
 	padding-left: 20px;
 }
+
+div #search {
+	background-color: blue;
+
+
+}
+
+#search form button {
+	margin-top: 100px;
+	text-align: center;
+
+}
+
