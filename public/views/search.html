@@ -1,15 +1,18 @@
 <div id="search">
-	<form>
-    	<input type="text" ng-model="searchTerm">
-   		<button type="submit" ng-click="search()">Search</button>
-	</form>
-  
-  <div ng-repeat="hike in hikes track by hike.unique_id">
-    <h2>{{hike.name}}</h2> 
-    <h3>{{hike.description}}</h3> 
-    <h3>{{hike.directions}}</h3> 
-  </div>
-
+	<div class="opacity">
+		<p><img src="images/adventure.png"></p>
+		<p>Enter a city to find a hike near you</p>
+		<form>
+	    	<input type="text" ng-model="searchTerm">
+	   		<button type="submit" ng-click="search()">Search</button>
+		</form>
+	  
+	  <div ng-repeat="hike in hikes track by hike.unique_id">
+	    <h2>{{hike.name}}</h2> 
+	    <h3>{{hike.description}}</h3> 
+	    <h3>{{hike.directions}}</h3> 
+	  </div>
+	</div>
 </div>
 
 

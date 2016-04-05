@@ -91,8 +91,20 @@ ul img {
 }
 
 div #search {
-	background-color: blue;
-	/*overflow: scroll;*/
+	background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2016/02/forest_creditstewart_lack_flickr.jpeg);
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	position: fixed;
+	background-size: cover;
+}
+
+#search .opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	position: fixed;
+	overflow: scroll;
 }
 
 #search form button {
@@ -101,4 +113,28 @@ div #search {
 
 }
 
-  
+#search h2 {
+	color: #FAE951;
+	text-align: center;
+
+}
+
+#search h3 {
+	color: white;
+	
+}
+
+#search p img {
+	width: 450px;
+   	height: 300px;
+   	position: fixed;
+   	left: 50%;
+   	margin-left: -225px;
+   	margin-top: 30px;
+}
+
+div#search p {
+	text-align: center;
+	color: white;
+}
+
