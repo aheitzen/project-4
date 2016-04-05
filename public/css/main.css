@@ -67,6 +67,7 @@ div#home p {
 	border-radius: 2px;
 	font-weight: bold;
 	margin-top: 40px;
+	cursor:pointer;
 }
 
 #home p button:hover {
@@ -123,11 +124,78 @@ div #search {
 	overflow: scroll;
 }
 
-#search form button {
-	margin-top: 100px;
+#search form input {
+	border: white 2px solid;
+	padding: 15px;
+	position: relative;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
 	text-align: center;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 40px;
+   	
+}
+
+::-webkit-input-placeholder {
+   color: #FAE951;
+}
+
+:-moz-placeholder { 
+   color: #FAE951;  
+}
+
+::-moz-placeholder {  
+   color: #FAE951;  
+}
+
+:-ms-input-placeholder {  
+   color: #FAE951;  
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+
+#search form button {
+	border: white 2px solid;
+	padding: 15px;
+	position: relative;
+	z-index: 50;
+	background-color: transparent;
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
+	margin-top: 40px;
+	cursor:pointer;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 30px;
 
 }
+
+#search form button:hover {
+	background-color: black;
+}
+
+/*#search form input:hover {
+	background-color: black;
+}*/
+
+
 
 #search h2 {
 	color: #FAE951;
@@ -143,9 +211,7 @@ div #search {
 #search p img {
 	width: 450px;
    	height: 300px;
-   	/*position: absolute; */
    	left: 50%;
-   /*	margin-left: 0px;*/
    	margin-top: 30px;
    
 }
@@ -155,13 +221,11 @@ div#search p {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
-	font-weight: bold;
+	
 
 }
 
-#d3 form button {
-	margin-top: 100px;
-	text-align: center;
 
-}
+
+
 
