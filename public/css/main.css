@@ -90,6 +90,22 @@ ul img {
 	padding-left: 20px;
 }
 
+div #d3 {
+	background-image: url(http://13160-presscdn-0-69.pagely.netdna-cdn.com/wp-content/uploads/2013/06/Yosemite_MistTrailWaterfall_DavidFulmer_CC-BY1600.jpg);
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	overflow: scroll;
+	position: fixed;
+}
+
+#d3 .opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.4);
+	
+}
+
 div #search {
 	background-image: url(https://www.euractiv.com/wp-content/uploads/sites/2/2016/02/forest_creditstewart_lack_flickr.jpeg);
 	height: 100%;
@@ -102,7 +118,7 @@ div #search {
 #search .opacity {
 	height: 100%;
 	width: 100%;
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.6);
 	position: fixed;
 	overflow: scroll;
 }
@@ -127,14 +143,25 @@ div #search {
 #search p img {
 	width: 450px;
    	height: 300px;
-   	position: fixed;
+   	/*position: absolute; */
    	left: 50%;
-   	margin-left: -225px;
+   /*	margin-left: 0px;*/
    	margin-top: 30px;
+   
 }
 
 div#search p {
 	text-align: center;
 	color: white;
+	font-family: 'Roboto', sans-serif;
+	font-size: 30px;
+	font-weight: bold;
+
+}
+
+#d3 form button {
+	margin-top: 100px;
+	text-align: center;
+
 }
 

@@ -19,7 +19,7 @@ app.get('/api/search/:searchTerm', function(req, res) {
 		headers: {
             'X-Mashape-Authorization': process.env.TRAIL_API_KEY
         },
-        params: {
+        qs: {
           'q[city_cont]': req.params.searchTerm
           
         }
@@ -36,22 +36,3 @@ app.get('/*', function(req, res) {
 
 app.listen(3000);
 
-// $scope.search = function() {
-//       var req = {
-//         url: "https://trailapi-trailapi.p.mashape.com/",
-//         method: 'GET',
-//          headers: {
-//             'X-Mashape-Authorization': ''
-//         },
-//         params: {
-//           'q[city_cont]': $scope.searchTerm
-          
-//         }
-//       }
-
-//       $http(req).then(function success(res) {
-//         $scope.hikes = res.data.places;
-//         console.log($scope.hikes);
-//       }, function error(res) {
-//         console.log(res);
-//       });
