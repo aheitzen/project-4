@@ -30,18 +30,12 @@ app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
 
     $scope.search = function() {
       var req = {
-        url: "https://trailapi-trailapi.p.mashape.com/",
-        method: 'GET',
-         headers: {
-            'X-Mashape-Authorization': ''
-        },
-        params: {
-          'q[city_cont]': $scope.searchTerm
-          
-        }
+        url: "/api/search/" + $scope.searchTerm,
+        
       }
 
       $http(req).then(function success(res) {
+        // console.log(JSON.parse(res.data));
         $scope.hikes = res.data.places;
         console.log($scope.hikes);
       }, function error(res) {
