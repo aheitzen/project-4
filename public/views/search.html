@@ -1,16 +1,14 @@
 <div id="search">
 	<form>
-		<!-- <label>Search for a Hike</label> -->
     	<input type="text" ng-model="searchTerm">
-   		 <button type="submit" ng-click="search()">Search</button>
+   		<button type="submit" ng-click="search()">Search</button>
 	</form>
-
-	<div ng-repeat="hike in hikes track by hike.unique_id">
-          <h2>{{hike.name}}</h2> 
-          <h3>{{hike.description}}</h3> 
-          <h3>{{hike.directions}}</h3> 
-    </div>
-
+  
+  <div ng-repeat="hike in hikes track by hike.unique_id">
+    <h2>{{hike.name}}</h2> 
+    <h3>{{hike.description}}</h3> 
+    <h3>{{hike.directions}}</h3> 
+  </div>
 
 </div>
 

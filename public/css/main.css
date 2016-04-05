@@ -92,8 +92,7 @@ ul img {
 
 div #search {
 	background-color: blue;
-
-
+	/*overflow: scroll;*/
 }
 
 #search form button {
@@ -102,3 +101,4 @@ div #search {
 
 }
 
+  
