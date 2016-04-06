@@ -5,13 +5,18 @@ var path = require('path');
 var expressJWT = require('express-jwt');
 var jwt = require('jsonwebtoken');
 var app = express();
+var User = require('./models/user.js');
 
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/project-4');
 
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(bodyParser.json())
 
+app.use('/api/hikes', require('./controllers/hikes.js'));
+app.use('/api/users', require('./controllers/users.js'))
 
+var secret = "mysecret";
 
 app.get('/api/search/:searchTerm', function(req, res) {
 	request({
@@ -29,6 +34,18 @@ app.get('/api/search/:searchTerm', function(req, res) {
 	})
 
 })
+
+app.post('/api/auth', function(req, res) {
+  User.findOne({email: req.body.email}, function(err, user) {
+    if (err || !user) return res.status(401).send({message: 'User not found'});
+    user.authenticated(req.body.password, function(err, result) {
+      if (err || !result) return res.status(401).send({message: 'User not authenticated'});
+
+      var token = jwt.sign(user, secret);
+      res.send({user: user, token: token});
+    });
+  });
+});
 
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname, 'public/index.html'));

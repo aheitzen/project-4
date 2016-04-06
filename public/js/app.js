@@ -1,4 +1,4 @@
-var app = angular.module('CharityApp', ['CharityCtrls', 'ui.router', 'ngVidBg']);
+var app = angular.module('HikeApp', ['HikeCtrls', 'ui.router', 'ngVidBg']);
 
 
 app.config([
@@ -34,6 +34,29 @@ app.config([
 				url:"/showpage",
 				templateUrl: "views/showpage.html",
 				controller: "ShowPageCtrl"
+			}
+		)
+		.state(
+			"signup",
+			{
+				url:"/signup",
+				templateUrl: "views/signup.html",
+				controller: "SignupCtrl"
+			}
+		)
+		.state (
+			"login",
+			{
+				url:"/login",
+				templateUrl: "views/login.html",
+				controller: "LoginCtrl"
+			}
+		)
+		.state (
+			"logout",
+			{
+				url:"/logout",
+				controller: "LogoutCtrl"
 			}
 		)
 	}

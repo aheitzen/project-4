@@ -3,20 +3,23 @@
 	
 	<div class="opacity">
 		<div id="modal" ng-show="openModal">
+			<h3 id="results">Results</h3>
 		  <div ng-repeat="hike in hikes track by hike.unique_id">
+
 		    <h2>{{hike.name}}</h2> 
 		    <h3>{{hike.description}}</h3> 
-		    <h3>{{hike.directions}}</h3> 
+		    <a target="blank" href="http://www.google.com/maps?q={{hike.directions}}"><h3>{{hike.directions}}</h3></a>
 		  </div>
 	</div>
 		<p><img src="images/adventure.png"></p>
 		<p>Enter a city to find a hike near you</p>
-		<form>
-	    	<input type="text" ng-model="searchTerm" placeholder="Enter a city">
-	    	<br />
+		
+			<form>
+		    	<input type="text" ng-model="searchTerm" placeholder="Enter a city">
+		    	<br />
 
-	   		<button type="submit" ng-click="search()">Search</button>
-		</form>
+		   		<button type="submit" ng-click="search()">Search</button>
+			</form>
 
 	</div>
 </div>

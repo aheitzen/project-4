@@ -1,4 +1,4 @@
-var app = angular.module('CharityCtrls', ['CharityServices']);
+var app = angular.module('HikeCtrls', ['HikeServices']);
 
 app.controller('HomeCtrl', function($scope) {
 	$scope.resources = [
@@ -115,7 +115,42 @@ app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
         console.log(res);
       });
     };
-}])
+}]);
+
+app.controller('SignupCtrl', ['$scope', '$http', function($scope, $http) {
+    $scope.user = {
+        name: '',
+        email: '',
+        password: ''
+    };
+    $scope.signup = function() {
+        console.log($scope.user);
+        $http.post('/api/users', $scope.user).then(function success (res) {
+            console.log(res);
+        }, function error (res) {
+            console.log(res);
+        })
+    };
+
+    
+}]);
+
+app.controller('LoginCtrl', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {
+  $scope.user = {
+    email: '',
+    password: ''
+  };
+  $scope.login = function() {
+    $http.post('/api/auth', $scope.user).then(function success (res) {
+      Auth.saveToken(res.data.token);
+      $location.path('/');
+
+    }, function error(res) {
+    console.log(res);
+
+    })
+  }
+}]);
 
 
 
