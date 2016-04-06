@@ -93,6 +93,7 @@ app.controller('d3Ctrl', function($scope) {
 app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.searchTerm = '';
     $scope.hikes = [];
+    $scope.openModal = false;
 
     // $scope.$watch('searchTerm', function(newValue, oldValue) {
     //     $scope.search();
@@ -109,6 +110,7 @@ app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
         // console.log(JSON.parse(res.data));
         $scope.hikes = res.data.places;
         console.log($scope.hikes);
+        $scope.openModal = true;
       }, function error(res) {
         console.log(res);
       });

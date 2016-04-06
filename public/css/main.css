@@ -92,7 +92,7 @@ ul img {
 }
 
 div #d3 {
-	background-image: url(http://13160-presscdn-0-69.pagely.netdna-cdn.com/wp-content/uploads/2013/06/Yosemite_MistTrailWaterfall_DavidFulmer_CC-BY1600.jpg);
+	background-image: url(http://earthnworld.com/wp-content/uploads/2015/10/41.jpg);
 	background-size: cover;
 	height: 100%;
 	width: 100%;
@@ -128,7 +128,7 @@ div #search {
 	border: white 2px solid;
 	padding: 15px;
 	position: relative;
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
@@ -172,7 +172,7 @@ textarea:focus, input:focus{
 	padding: 15px;
 	position: relative;
 	z-index: 50;
-	background-color: transparent;
+	background-color: rgba(255, 255, 255, 0.1);
 	color: white;
 	font-size: 20px;
 	font-family: 'Roboto', sans-serif;
@@ -224,6 +224,18 @@ div#search p {
 	
 
 }
+#search #modal {
+	background-color: black; 
+	width: 50vw; 
+	height: 50vh; 
+	overflow: scroll; 
+	margin-top: 25vh; 
+	margin-left: 25vw; 
+	float: left; 
+	z-index: 50;
+	position: fixed;
+}
+
 
 
 
