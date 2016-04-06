@@ -4,7 +4,8 @@ var app = angular.module('HikeApp', ['HikeCtrls', 'ui.router', 'ngVidBg']);
 app.config([
 	"$stateProvider",
 	"$urlRouterProvider",
-	function($stateProvider, $urlRouterProvider) {
+	"$locationProvider",
+	function($stateProvider, $urlRouterProvider, $locationProvider) {
 		$urlRouterProvider.otherwise("/");
 		$stateProvider.state("home", {
 			url: "/",
@@ -53,11 +54,13 @@ app.config([
 			}
 		)
 		.state (
-			"logout",
+			"profile",
 			{
-				url:"/logout",
-				controller: "LogoutCtrl"
+				url:"/profile",
+				templateUrl: "views/profile.html",
+				controller: "ProfileCtrl"
 			}
 		)
+	$locationProvider.html5Mode(true); //elimated the hash in the url
 	}
 ]);

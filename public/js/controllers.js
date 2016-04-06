@@ -152,6 +152,15 @@ app.controller('LoginCtrl', ['$scope', '$http', '$location', 'Auth', function($s
   }
 }]);
 
+app.controller('LogoutCtrl', ['$scope', 'Auth', '$location', function($scope, Auth, $location) {
+  $scope.Auth = Auth;
+  $scope.logout = function() {
+    Auth.removeToken();
+    $location.path('/');
+    
+  }
+}])
+
 
 
 

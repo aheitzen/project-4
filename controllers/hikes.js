@@ -1,36 +1,36 @@
 var express = require('express');
-var Recipe = require('../models/hike');
+var Hike = require('../models/hike');
 var router = express.Router();
 
 router.route('/')
   .get(function(req, res) {
-    Recipe.find(function(err, recipes) {
+    Hike.find(function(err, hikes) {
       if (err) return res.status(500).send(err);
-      res.send(recipes);
+      res.send(hikes);
     });
   })
   .post(function(req, res) {
-    Recipe.create(req.body, function(err, recipe) {
+    Hike.create(req.body, function(err, hike) {
       if (err) return res.status(500).send(err);
-      res.send(recipe);
+      res.send(hike);
     });
   });
 
 router.route('/:id')
   .get(function(req, res) {
-    Recipe.findById(req.params.id, function(err, recipe) {
+    Hike.findById(req.params.id, function(err, hike) {
       if (err) return res.status(500).send(err);
-      res.send(recipe);
+      res.send(hike);
     });
   })
-  .put(function(req, res) {
-    Recipe.findByIdAndUpdate(req.params.id, req.body, function(err) {
-      if (err) return res.status(500).send(err);
-      res.send({'message': 'success'});
-    });
-  })
+  // .put(function(req, res) {
+  //   Recipe.findByIdAndUpdate(req.params.id, req.body, function(err) {
+  //     if (err) return res.status(500).send(err);
+  //     res.send({'message': 'success'});
+  //   });
+  // })
   .delete(function(req, res) {
-    Recipe.findByIdAndRemove(req.params.id, function(err) {
+    Hike.findByIdAndRemove(req.params.id, function(err) {
       if (err) return res.status(500).send(err);
       res.send({'message': 'success'});
     });

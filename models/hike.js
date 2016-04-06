@@ -1,9 +1,10 @@
 var mongoose = require('mongoose');
 
 var HikeSchema = new mongoose.Schema({
-  // title: String,
-  // description: String,
-  // image: String
+  name: String,
+  description: String,
+  directions: String,
+  userId: String
 
 });
 
