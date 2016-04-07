@@ -4,12 +4,15 @@
 
 * HTML5/CSS3
 * Angular
-* D3
+* D3 Liquid Fill Gauge
 * Angular-Video-Background: html5 fullscreen video background in angular
 * Express
 * Node
-* mashape
-* trailApi
+* Mongo
+* Mongoose
+* Aashape
+* TrailApi
+* Photoshop
 
 
 **General Approach**
@@ -18,6 +21,7 @@
 * Built and styled the landing page, also set up routes between the pages.
 * Started building my backend using express and node. 
 * Consumed the TrailAPI 
+* 
 
 **User stories**
 

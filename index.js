@@ -8,7 +8,7 @@ var app = express();
 var User = require('./models/user.js');
 
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/project-4');
+mongoose.connect(proccess.env.MONGOLAB_URI || 'mongodb://localhost/project-4');
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json())
