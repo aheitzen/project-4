@@ -13,10 +13,16 @@ mongoose.connect('mongodb://localhost/project-4');
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(bodyParser.json())
 
+var secret = "mysecret";
+
+app.use('/api/hikes', expressJWT({secret: secret})); 
+app.use('/api/users', expressJWT({secret: secret})
+.unless({path: ['/api/users'], method: 'POST'}));
+
 app.use('/api/hikes', require('./controllers/hikes.js'));
 app.use('/api/users', require('./controllers/users.js'))
 
-var secret = "mysecret";
+
 
 app.get('/api/search/:searchTerm', function(req, res) {
 	request({

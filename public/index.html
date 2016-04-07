@@ -22,10 +22,13 @@
 	 <nav ng-controller="LogoutCtrl">
 	 	<ul>
 	 		<a href="/home"><img src="videos/arrow1.png"></a>
-	 		<a href="/signup">SignUp</a>
-	 		<a href="/login">Login</a>
-	 		<a href="/profile">Profile</a>
-	 		<a href="#" ng-click="logout()">Logout</a>
+	 		<a class="navbar" href="#" ng-click="logout()">Logout</a>
+	 		<a class="navbar"  href="/profile">Profile</a>
+	 		<a class="navbar" href="/login">Login</a>
+	 		<a class="navbar" href="/signup">SignUp</a>
+	 		
+	 		
+	 		
 	 	</ul>
 	 </nav>
 	 <div ui-view></div>

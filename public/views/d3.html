@@ -9,14 +9,18 @@
 
 
    
-
-
-<svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg>
-<svg id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
-<svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg>
+<div id="svg">
+<!-- 
+<svg id="fillgauge1" width="97%" height="250" onclick="gauge1.update(NewValue());"></svg> -->
+<svg fill="#FFFFFF" id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
+<p class="psvg">12.13% of Americans hiked in Spring of 2015, thats 38.67 million people!</p>
+<!-- <svg id="fillgauge3" width="19%" height="200" onclick="gauge3.update(NewValue());"></svg> -->
 <svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
+<p class="psvg">33.32% of America is covered in forest.</p>
 <svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
-<svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg>
+<p class="psvg">There is 66% less oxygen in each breath on the summit of Everest than at sea level</p>
+<!-- <svg id="fillgauge6" width="19%" height="200" onclick="gauge6.update(NewValue());"></svg> -->
+</div>
 <script>
     // var gauge1 = loadLiquidFillGauge("fillgauge1", 30);
     // var config1 = liquidFillGaugeDefaultSettings();

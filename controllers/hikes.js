@@ -23,12 +23,6 @@ router.route('/:id')
       res.send(hike);
     });
   })
-  // .put(function(req, res) {
-  //   Recipe.findByIdAndUpdate(req.params.id, req.body, function(err) {
-  //     if (err) return res.status(500).send(err);
-  //     res.send({'message': 'success'});
-  //   });
-  // })
   .delete(function(req, res) {
     Hike.findByIdAndRemove(req.params.id, function(err) {
       if (err) return res.status(500).send(err);

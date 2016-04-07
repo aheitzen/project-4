@@ -8,9 +8,9 @@
 
 		    <h2>{{hike.name}}</h2> 
 		    <h3>{{hike.description}}</h3> 
-		    <a target="blank" href="http://www.google.com/maps?q={{hike.directions}}"><h3>{{hike.directions}}</h3></a>
-		    <button>
-	    		<label for="title">Add</label>
+		    <a id="underline" target="blank" href="http://www.google.com/maps?q={{hike.directions}}"><h3>{{hike.directions}}</h3></a>
+		    <button id="addbutton">
+	    		<label for="title" ng-click="addHike($index)">Add</label>
 	    	</button>
 		  </div>
 	</div>
