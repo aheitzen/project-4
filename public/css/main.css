@@ -289,8 +289,8 @@ div#search p {
 
 #d3 #svg {
 	position: relative;
-	top: 50%;
-  	left: 72%;
+	top: 15%;
+  	left: 64%;
   	transform: translate(-50%, -50%);
   	display:inline-block;
  	
@@ -300,14 +300,14 @@ div#search p {
 	height: 300px;
 	width: 400px;
 	left: 34%;
-	top: 50%;
-	
+	position: relative;
 	margin-top: 50px;
 	margin-bottom: 0;
 }
 
 #d3 p.psvg {
-	display: inline-block;
+	position: fixed;
+	top: 15%;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -325,10 +325,11 @@ div#search p {
 	font-weight: bold;
 	text-align: center;
 	top: 50%;
-  	left: 50%;
+  	left: 20%;
  	transform: translate(-50%, -50%);
  	margin-top: 10px;
  	z-index: 1;
+
 }
 
 .liquidFillGaugeText { 
@@ -337,6 +338,8 @@ div#search p {
 	font-weight: bold;
 	display: block;
 }
+
+/*Login CSS*/
 
 div #login {
 	background-image: url(http://thetechnews.com/wp-content/uploads/2016/02/8789506b-df47-4d1e-ad47-d5cca2a81a65.jpg);

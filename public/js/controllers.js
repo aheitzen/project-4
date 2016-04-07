@@ -2,11 +2,7 @@ var app = angular.module('HikeCtrls', ['HikeServices']);
 
 app.controller('HomeCtrl', function($scope) {
 	$scope.resources = [
-            // 'http://techslides.com/demos/sample-videos/small.webm',
             'videos/Forest_15_3b_Videvo.mp4'
-            // '*.ogv',
-            // '*.mp4',
-            // '*.swf'
         ];
         $scope.poster = 'videos/trees.png';
         $scope.fullScreen = true;
@@ -17,7 +13,6 @@ app.controller('HomeCtrl', function($scope) {
 
 app.controller('d3Ctrl', function($scope) {
     
-
     var config2 = liquidFillGaugeDefaultSettings();
     config2.circleColor = "#FFFFFF";
     config2.textColor = "#000000";
@@ -29,9 +24,6 @@ app.controller('d3Ctrl', function($scope) {
     loadLiquidFillGauge("fillgauge2", 12.13, config2);
     loadLiquidFillGauge("fillgauge4", 33.32, config2);
     loadLiquidFillGauge("fillgauge5", 66, config2);
-
-
-    
 
     function NewValue(){
         if(Math.random() > .5){
@@ -99,8 +91,6 @@ app.controller('SignupCtrl', ['$scope', '$http', function($scope, $http) {
             console.log(res);
         })
     };
-
-    
 }]);
 
 app.controller('LoginCtrl', ['$scope', '$http', '$location', 'Auth', function($scope, $http, $location, Auth) {

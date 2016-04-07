@@ -14,10 +14,9 @@
 * TrailApi
 * Photoshop
 
-
 **General Approach**
 
-*Brainstormed and wire framed my application. I used ninja mock for my wireframes.
+* Brainstormed and wire framed my application. I used ninja mock for my wireframes.
 * Built and styled the landing page, also set up routes between the pages.
 * Started building my backend using express and node. 
 * Consumed the TrailAPI 
@@ -48,8 +47,6 @@
 
 * Constructing the backend and database structures
 * Building a responsive design without using a framework like bootstrap.
-
-
 
 ![alt tag](public/images/Page 1.png)
 ![alt tag](public/images/Page 2.png)

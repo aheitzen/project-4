@@ -1,6 +1,5 @@
 var app = angular.module('HikeApp', ['HikeCtrls', 'ui.router', 'ngVidBg']);
 
-
 app.config([
 	"$stateProvider",
 	"$urlRouterProvider",
