@@ -296,11 +296,39 @@ div#search p {
  	
 }
 
+#d3 img {
+	height: 300px;
+	width: 400px;
+	left: 34%;
+	top: 50%;
+	
+	margin-top: 50px;
+	margin-bottom: 0;
+}
+
 #d3 p.psvg {
 	display: inline-block;
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+}
+
+#d3 a button {
+	border: white 2px solid;
+	padding: 15px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
+	text-align: center;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 10px;
+ 	z-index: 1;
 }
 
 .liquidFillGaugeText { 
