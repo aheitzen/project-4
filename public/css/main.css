@@ -185,7 +185,6 @@ textarea:focus, input:focus{
 	border: white 2px solid;
 	padding: 15px;
 	position: relative;
-	/*z-index: 50;*/
 	background-color: rgba(255, 255, 255, 0.1);
 	color: white;
 	font-size: 20px;
@@ -311,6 +310,83 @@ div#search p {
 	display: block;
 }
 
+div #login {
+	background-image: url(http://thetechnews.com/wp-content/uploads/2016/02/8789506b-df47-4d1e-ad47-d5cca2a81a65.jpg);
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	overflow: scroll;
+	position: fixed;
+	
+}
+
+#login .opacity {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	overflow: scroll;
+}
+
+#login #forms input#email {
+	border: white 2px solid;
+	padding: 15px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
+	text-align: center;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 40px;
+	
+}
+
+#login #forms input#password {
+	border: white 2px solid;
+	padding: 15px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
+	text-align: center;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 40px;
+	
+}
+
+#login #forms p {
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+}
+
+#login input#loginsubmit {
+	border: white 1px solid;
+	padding: 15px;
+	position: relative;
+	background-color: rgba(255, 255, 255, 0.15);
+	color: white;
+	font-size: 20px;
+	font-family: 'Roboto', sans-serif;
+	border-radius: 2px;
+	font-weight: bold;
+	text-align: center;
+	top: 50%;
+  	left: 50%;
+ 	transform: translate(-50%, -50%);
+ 	margin-top: 40px;
+}
 
 
 

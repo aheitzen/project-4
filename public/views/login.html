@@ -1,12 +1,13 @@
 <div id="login">
+	<div class="opacity">
 	
-	<div>
-	    <label for="email">Email</label>
-	    <input type="email" id="email" placeholder="test@test.com" ng-model="user.email">
+	<div id="forms">
+	    <p>Email</p>
+	    <input id="email" type="email" id="email" placeholder="test@test.com" ng-model="user.email">
+  		<br />
+	    <p>Password</p>
+	    <input id="password" type="password" id="password" placeholder="********" ng-model="user.password">
   </div>
-  <div>
-	    <label for="password">Password</label>
-	    <input type="password" id="password" placeholder="********" ng-model="user.password">
+  <input id="loginsubmit" type="submit" ng-click="login()">
   </div>
-  <input type="submit" ng-click="login()">
 </div>

@@ -31,6 +31,16 @@
 
 **Unsolved problems**
 
+* Adding notifications for when the user is successfully logged in/signed up
+* Adding the delete feature to the profile page
+* Adding an Angular google maps directive so the user is not redirected to another webpage
+* Adding transition slides using jQuery to create a seamless experince for the user 
+* Perfecting the custom modal to close so the user can search again
+* Have responsive design across all pages
+* Add a CSS animation for the loading screen of the search page, when the api is retrieving the data
+* Style the signup and profile page 
+* Add more profile features like the option to uplod a picture or connect with friends 
+
 **Major Hurdles**
 
 
