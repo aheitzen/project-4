@@ -52,5 +52,5 @@
 
 
 ![alt tag](public/images/Page 1.png)
-![alt tag](/images/Page 2.png)
-![alt tag](/images/Page 3.png)
+![alt tag](public/images/Page 2.png)
+![alt tag](public/images/Page 3.png)
