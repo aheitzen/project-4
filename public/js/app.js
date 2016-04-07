@@ -1,5 +1,9 @@
 var app = angular.module('HikeApp', ['HikeCtrls', 'ui.router', 'ngVidBg']);
 
+app.config(['$httpProvider', function($httpProvider) {
+  $httpProvider.interceptors.push('AuthInterceptor');
+}])
+
 app.config([
 	"$stateProvider",
 	"$urlRouterProvider",
@@ -60,6 +64,6 @@ app.config([
 				controller: "ProfileCtrl"
 			}
 		)
-	$locationProvider.html5Mode(true); //elimated the hash in the url
+	$locationProvider.html5Mode(true); 
 	}
 ]);

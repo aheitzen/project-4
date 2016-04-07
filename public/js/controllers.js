@@ -42,7 +42,7 @@ app.controller('d3Ctrl', function($scope) {
     }
 })
 
-app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
+app.controller('SearchCtrl', ['$scope', '$http', '$location', function($scope, $http, $location ) {
     $scope.searchTerm = '';
     $scope.hikes = [];
     $scope.openModal = false;
@@ -55,7 +55,7 @@ app.controller('SearchCtrl', ['$scope', '$http', function($scope, $http) {
             data: $scope.hikes[index] 
         }
         $http(req).then(function success(res) {
-            console.log("woohoo it worked");
+            $location.path('/profile');
         })
     }
 
@@ -118,6 +118,17 @@ app.controller('LogoutCtrl', ['$scope', 'Auth', '$location', function($scope, Au
     
   }
 }])
+
+app.controller('ProfileCtrl', ['$scope', '$http', 'Auth', '$location', function($scope, $http, Auth, $location) {
+ $http.get('/api/hikes/').then(function success(res) {
+        $scope.hikes = res.data;
+        console.log($scope.hikes);
+      }, function error(res) {
+        console.log(res);
+      });
+}])
+
+
 
 
 

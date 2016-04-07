@@ -2,4 +2,10 @@
 	<button>
 		<label for="title">Delete</label>
 	</button>
+
+	 <div ng-repeat="hike in hikes track by $index">
+			<h2>{{hike.name}}</h2> 
+		    <h3>{{hike.description}}</h3> 
+		    <a id="underline" target="blank" href="http://www.google.com/maps?q={{hike.directions}}"><h3>{{hike.directions}}</h3></a>
+		 </div>
 </div>
