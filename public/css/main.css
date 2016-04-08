@@ -288,35 +288,54 @@ div#search p {
 }
 
 #d3 #svg {
-	position: relative;
-	top: 15%;
-  	left: 62%;
-  	transform: translate(-50%, -50%);
-  	display:inline-block;
+	/*position: relative;*/
+/*	top: 15%;
+  	left: 62%;*/
+  	/*transform: translate(-50%, -50%);*/
+  	/*display:inline-block;*/
+  	width: 100%;
+  	display: flex;
+  	text-align: center;
  	
 }
 
+#d3 #svg .svgcontainer {
+	display: inline-block;
+	flex: 1;
+}
+
+/*#d3 #svg #flex2 {
+	flex: 2;
+}
+*/
 #d3 img {
 	height: 250px;
 	width: 350px;
-	left: 34%;
-	position: relative;
+	/*left: 34%;*/
+	/*position: relative;*/
 	margin-top: 50px;
 	margin-bottom: 0;
+
 }
 
 #d3 p.psvg {
-	position: fixed;
-	top: 15%;
+
+	/*top: 15%;*/
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
+	margin: 15px;
 }
 
-#d3 a button {
+#d3 p {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+#d3 p a button {
 	border: white 2px solid;
 	padding: 15px;
-	position: relative;
+	/*position: relative;*/
 	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
@@ -324,13 +343,15 @@ div#search p {
 	border-radius: 2px;
 	font-weight: bold;
 	text-align: center;
-	top: 50%;
-  	left: 20%;
- 	transform: translate(-50%, -50%);
+	/*top: 50%;
+  	left: 20%;*/
+ 	/*transform: translate(-50%, -50%);*/
  	margin-top: 10px;
- 	z-index: 1;
+ 	/*z-index: 1;*/
 
 }
+
+
 
 .liquidFillGaugeText { 
 	font-family: 'Roboto', sans-serif;

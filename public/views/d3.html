@@ -1,15 +1,22 @@
 <div id="d3">
 	<div class="opacity">
 		<script type="text/javascript" src="js/liquidFillGauge.js"></script>
-		<img src="images/funfacts1.png">
-		<a href="/#/search"><button>Onward!</button></a>
+		<p><img src="images/funfacts1.png"></p>
+		
 		<div id="svg">
-		<svg fill="#FFFFFF" id="fillgauge2" width="19%" height="200" onclick="gauge2.update(NewValue());"></svg>
-			<p class="psvg">Americans hiked in Spring of 2015, thats 38.67 million people!</p>
-		<svg id="fillgauge4" width="19%" height="200" onclick="gauge4.update(NewValue());"></svg>
-			<p class="psvg">Of America is covered in forest.</p>
-		<svg id="fillgauge5" width="19%" height="200" onclick="gauge5.update(NewValue());"></svg>
-			<p class="psvg">Less oxygen in each breath on the summit of Everest than at sea level</p>
+			<div class="svgcontainer">
+				<svg fill="#FFFFFF" id="fillgauge2" width="40%" height="200" onclick="gauge2.update(NewValue());"></svg>
+				<p class="psvg">Americans hiked in Spring of 2015, thats 38.67 million people!</p>
+			</div>
+			<div class="svgcontainer">
+				<svg id="fillgauge4" width="40%" height="200" onclick="gauge4.update(NewValue());"></svg>
+				<p class="psvg">Of America is covered in forest.</p>
+			</div>
+			<div class="svgcontainer">
+				<svg id="fillgauge5" width="40%" height="200" onclick="gauge5.update(NewValue());"></svg>
+				<p class="psvg">Less oxygen in each breath on the summit of Everest than at sea level</p>
+			</div>
 		</div>
+		<p><a href="/#/search"><button>Onward!</button></a></p>
 	</div>
 </div>
