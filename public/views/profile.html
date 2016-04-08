@@ -4,7 +4,7 @@
 		<h3>{{hike.description}}</h3> 
 		<a id="underline" target="blank" href="http://www.google.com/maps?q={{hike.directions}}"><h3>{{hike.directions}}</h3></a>
 		<button>
-			<label for="title">Delete</label>
+			<label for="title" ng-click="deleteHike(hike)">Delete</label>
 		</button>
 	</div>
 </div>

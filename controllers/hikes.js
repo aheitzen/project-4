@@ -24,6 +24,7 @@ router.route('/:id')
     });
   })
   .delete(function(req, res) {
+    console.log(req.params.id)
     Hike.findByIdAndRemove(req.params.id, function(err) {
       if (err) return res.status(500).send(err);
       res.send({'message': 'success'});

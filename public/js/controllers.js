@@ -67,7 +67,6 @@ app.controller('SearchCtrl', ['$scope', '$http', '$location', function($scope, $
       }
 
       $http(req).then(function success(res) {
-        // console.log(JSON.parse(res.data));
         $scope.hikes = res.data.places;
         console.log($scope.hikes);
         $scope.openModal = true;
@@ -120,12 +119,21 @@ app.controller('LogoutCtrl', ['$scope', 'Auth', '$location', function($scope, Au
 }])
 
 app.controller('ProfileCtrl', ['$scope', '$http', 'Auth', '$location', function($scope, $http, Auth, $location) {
+ 
  $http.get('/api/hikes/').then(function success(res) {
         $scope.hikes = res.data;
         console.log($scope.hikes);
       }, function error(res) {
         console.log(res);
       });
+    $scope.deleteHike = function(hike) {
+        var id = hike._id;
+        $http.delete('/api/hikes/' + id).then(function success(res) {
+            $location.path('/profile')
+        }, function error(res) {
+            alert('there was a error deleting your hike')
+        });
+    }
 }])
 
 

@@ -31,9 +31,6 @@ div#home p {
 	position: relative;
 	font-size: 30px;
 	font-family: 'Roboto', sans-serif;
-
-
-
 }
 
 #home .opacity:before {
@@ -41,15 +38,12 @@ div#home p {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
-	/*z-index: 20;*/
 	position: fixed;
 }
-
 
 #home p img {
 	height: 450px;
 	width: 750px;
-	/*position: relative;*/
 	z-index: 1;
 	margin-top: 0;
 	
@@ -58,7 +52,6 @@ div#home p {
 #home p a button {
 	border: white 2px solid;
 	padding: 15px;
-	/*position: relative;*/
 	z-index: 50;
 	background-color: transparent;
 	color: #FAE951;
@@ -78,8 +71,6 @@ ul {
 	height: 100%;
 	width: 100%;
 	padding: 0;
-
-
 }
 
 ul img {
@@ -116,14 +107,12 @@ div #d3 {
 	height: 100%;
 	width: 100%;
 	overflow: scroll;
-	/*position: fixed;*/
 }
 
 #d3 .opacity {
 	height: 100%;
 	width: 100%;
 	background-color: rgba(0, 0, 0, 0.4);
-	
 }
 
 div #search {
@@ -158,7 +147,6 @@ div #search {
   	left: 50%;
  	transform: translate(-50%, -50%);
  	margin-top: 40px;
-   	
 }
 
 ::-webkit-input-placeholder {
@@ -185,7 +173,6 @@ textarea:focus, input:focus{
     outline: none;
 }
 
-
 #search form button {
 	border: white 2px solid;
 	padding: 15px;
@@ -202,30 +189,21 @@ textarea:focus, input:focus{
   	left: 50%;
  	transform: translate(-50%, -50%);
  	margin-top: 30px;
-
 }
 
 #search form button:hover {
 	background-color: black;
 }
 
-/*#search form input:hover {
-	background-color: black;
-}*/
-
-
-
 #search h2 {
 	color: #FAE951;
 	text-align: center;
 	font-family: 'Roboto', sans-serif;
-
 }
 
 #search h3 {
 	color: white;
 	font-family: 'Roboto', sans-serif;
-	
 }
 
 #search p img {
@@ -233,7 +211,6 @@ textarea:focus, input:focus{
    	height: 300px;
    	left: 50%;
    	margin-top: 0;
-   
 }
 
 div#search p {
@@ -241,9 +218,8 @@ div#search p {
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 30px;
-	
-
 }
+
 #search #modal {
 	background-color: rgba(0, 0, 0, 0.85); 
 	width: 50vw; 
@@ -257,10 +233,6 @@ div#search p {
 	border-style: inset;
 	z-index: 1;
 	padding: 10px;
-	/*box-shadow: 10px 10px 5px #000000;*/
-   
-
-	
 }
 
 #search h3#results {
@@ -293,15 +265,9 @@ div#search p {
 }
 
 #d3 #svg {
-	/*position: relative;*/
-/*	top: 15%;
-  	left: 62%;*/
-  	/*transform: translate(-50%, -50%);*/
-  	/*display:inline-block;*/
   	width: 100%;
   	display: flex;
   	text-align: center;
- 	
 }
 
 #d3 #svg .svgcontainer {
@@ -309,23 +275,14 @@ div#search p {
 	flex: 1;
 }
 
-/*#d3 #svg #flex2 {
-	flex: 2;
-}
-*/
 #d3 img {
 	height: 250px;
 	width: 350px;
-	/*left: 34%;*/
-	/*position: relative;*/
 	margin-top: 10px;
 	margin-bottom: 0;
-
 }
 
 #d3 p.psvg {
-
-	/*top: 15%;*/
 	color: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 20px;
@@ -341,7 +298,6 @@ div#search p {
 #d3 p a button {
 	border: white 2px solid;
 	padding: 15px;
-	/*position: relative;*/
 	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
@@ -349,15 +305,8 @@ div#search p {
 	border-radius: 2px;
 	font-weight: bold;
 	text-align: center;
-	/*top: 50%;
-  	left: 20%;*/
- 	/*transform: translate(-50%, -50%);*/
  	margin-top: 10px;
- 	/*z-index: 1;*/
-
 }
-
-
 
 .liquidFillGaugeText { 
 	font-family: 'Roboto', sans-serif;
@@ -389,7 +338,6 @@ div #login {
 #login #forms input#email {
 	border: white 2px solid;
 	padding: 15px;
-	/*position: relative;*/
 	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
@@ -397,18 +345,12 @@ div #login {
 	border-radius: 2px;
 	font-weight: bold;
 	text-align: center;
-	/*top: 50%;
-  	left: 20%;*/
- 	/*transform: translate(-50%, -50%);*/
  	margin-top: 0;
- 	/*z-index: 1;*/
-	
 }
 
 #login #forms input#password {
 	border: white 2px solid;
 	padding: 15px;
-	/*position: relative;*/
 	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
@@ -416,11 +358,7 @@ div #login {
 	border-radius: 2px;
 	font-weight: bold;
 	text-align: center;
-	/*top: 50%;
-  	left: 20%;*/
- 	/*transform: translate(-50%, -50%);*/
  	margin-top: 0;
- 	/*z-index: 1;*/
 }
 
 #login #forms p {
@@ -435,7 +373,6 @@ div #login {
 #login input#loginsubmit {
 	border: white 2px solid;
 	padding: 15px;
-	/*position: relative;*/
 	background-color: rgba(255, 255, 255, 0.15);
 	color: white;
 	font-size: 20px;
@@ -443,12 +380,7 @@ div #login {
 	border-radius: 2px;
 	font-weight: bold;
 	text-align: center;
-	/*top: 50%;
-  	left: 20%;*/
- 	/*transform: translate(-50%, -50%);*/
  	margin-top: 10px;
- 	/*z-index: 1;*/
-
 }
 
 #login p {
