@@ -129,7 +129,8 @@ app.controller('ProfileCtrl', ['$scope', '$http', 'Auth', '$location', function(
     $scope.deleteHike = function(hike) {
         var id = hike._id;
         $http.delete('/api/hikes/' + id).then(function success(res) {
-            $location.path('/profile')
+            // $location.path('/profile')
+            window.location.href = "/profile"
         }, function error(res) {
             alert('there was a error deleting your hike')
         });
