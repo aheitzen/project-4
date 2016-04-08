@@ -49,16 +49,16 @@ div#home p {
 #home p img {
 	height: 450px;
 	width: 750px;
-	position: relative;
-	z-index: 50;
-	margin-top: 50px;
+	/*position: relative;*/
+	z-index: 1;
+	margin-top: 0;
 	
 }
 
 #home p a button {
 	border: white 2px solid;
 	padding: 15px;
-	position: relative;
+	/*position: relative;*/
 	z-index: 50;
 	background-color: transparent;
 	color: #FAE951;
